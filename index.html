@@ -20,6 +20,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 :root{
     --yellow:#f9ca24;
     --red: #c91821;
@@ -105,6 +106,7 @@ section{
 
 .heading span{
     color:var(--yellow);
+    
 }
 
 
@@ -151,13 +153,25 @@ header{
 }
 
 header .user img{
-    height:20rem;
+    height: 18rem;
     align-items: center;
-    width: 20rem;
+    width: 18rem;
     border-radius: 20%;
-    object-fit: cen;
-    margin-bottom: 1rem;
+    object-fit: cover;
+    margin-top: 50px;
     border: 0.5rem solid var(--red);
+}
+header .user img:hover{
+    height: 25rem;
+    align-items: center;
+    width: 25rem;
+    cursor:context-menu;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-top: 11rem;
+    border: 0.5rem dashed transparent;
+    max-zoom: 90px;
+    transform: scale(1.0);
 }
 
 header .user .name{
@@ -270,17 +284,38 @@ header .navbar ul li a:hover:before {
     color:#fff;
     padding-left: 20px;
 }
+.home h3:hover{
+    height: auto;
+    border-left: 3px var(--yellow) solid;
+    font-size: 3.0rem;
+    color: orangered;
+    padding-left: 20px;
+}
 
 .home h1{
     font-size:7rem;
     color:#fff;
     border-left: 3px var(--yellow) solid;
     padding-left: 20px;
+    cursor: alias;
+}
+.home h1:hover{
+    font-size:7rem;
+    color: red;
+    border-left: 3px blue solid;
+    padding-left: 20px;
+    cursor: alias;
 }
 
 .home h1 span{
     color:var(--yellow);
+    cursor: crosshair;
 }
+.home h1 span:hover{
+    color: red;
+    cursor: crosshair;
+}
+
 
 .home p{
     border-left: 3px blue solid;
@@ -289,6 +324,18 @@ header .navbar ul li a:hover:before {
     padding: 1rem 0;
     padding-left: 20px;
     height: auto;
+    cursor: context-menu;
+}
+.home p:hover{
+    border-left: 3px yellow solid;
+    font-size:2.1rem;
+    color: whitesmoke;
+    padding: 30px;
+    padding-left: 50px;
+    height: auto;
+    cursor: all-scroll;
+    font-weight: 300;
+    transition: 1.5s;
 }
 
 .about .row{
@@ -462,20 +509,21 @@ abbr:hover{
 
 .portfolio .box-container a{
     color: red;
-    border: 6px  solid Yellow;
+    border: 4px  solid Yellow;
     border-radius: 65px;
     margin-top: 150px;
-    width: 143px;
+    width: 140px;
+
     align-items: center;
     text-align: center;
-    height : auto;
-    padding: 1.5em 1.5em;
+    height : 145;
+    padding: 2em;
 }
 .portfolio .box-container a:hover {
     color: yellow;
-    height: 300px;
-    padding: 0px;
-    margin-top: -50px;
+    height: 0px;
+    padding: 5px;
+    margin-top: -10px;
     text-align: center;
     align-items: center;
     border: 0px transparent ;
@@ -498,6 +546,10 @@ abbr:hover{
 
 .portfolio .box-container .box:hover img{
     transform: scale(1.2);
+}
+.contact .heading:hover {
+    font-size: 35px;
+    font-family: 'Cinzel', serif;
 }
 
 .contact .row{
@@ -522,8 +574,9 @@ abbr:hover{
 .contact .row .content:hover {
 border-right: 4px red solid;
 cursor:help;
+
 border-left: 4px red solid;
-transition-delay: 0.1s;
+transition-delay: 3.10s;
 
 }
 .contact .row form{
@@ -562,10 +615,12 @@ transition-delay: 0.1s;
     border-top: 3px red solid;
     border-radius: 75px;
     width: auto;
+    
 }
 .contact .row .content .title:hover {
 color:turquoise;
 border-radius: 75px;
+font-family: 'Cinzel', serif;
 border-top: yellow 3px solid;
 }
 
@@ -575,13 +630,29 @@ border-top: yellow 3px solid;
     text-indent: 0px;
     font-size: 2rem;
     color: rgb(255, 255, 255);
-    padding:1rem 0;
+    padding: 15px 15px;
     font-weight: normal;
+}
+.contact .row .content .info h3:hover{
+    display: flex;
+    text-align: left;line-height: 25px;
+    text-indent: 0px;
+    font-size: 2.2rem;
+    color: white;
+    padding: 10px 55px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
 }
 
 .contact .row .content .info h3 i{
     padding-right: 2.5rem;
     color: yellow;
+    font-size: 30px;
+}
+.contact .row .content .info h3 i:hover{
+    padding-right: 2.5rem;
+    color:red;
+    padding: 10px;
     font-size: 30px;
 }
 
@@ -888,7 +959,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 <!-- header section ends -->
 <div class="headerr">
-  <h2>Scroll Indicator</h2>
+  <h2></h2>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>  
