@@ -82,15 +82,26 @@ section{
     margin-top: 1rem;
     font-size: 2.5rem;
     border-radius: 5rem;
+    font-weight: 400;
+    font-family: 'Ubuntu' , sans-serif;
 }
 
 .btn i{
     padding:0 .5rem;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+}
+.btn i:hover{
+    padding:0 .5rem;
+    font-size: 2.6rem;
+    color: #1a1a1a;
 }
 
 .btn:hover{
     background:var(--yellow);
+    color: #c91821;
+    font-weight: 600;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 2.7rem;
 }
 
 .heading{
@@ -523,6 +534,19 @@ font-weight: 400;
     position: relative;
     
 }
+.education .box-container .box:hover{
+    width:27rem;
+    margin: 2rem 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    border-left:solid transparent;
+    height: auto;
+    line-height: 20px;
+    transition: ease-in;
+    transition-delay: 0s;
+    position: relative;
+    
+}
 
 .education .box-container .box span{
     font-size: 4.5rem;
@@ -548,16 +572,15 @@ abbr {
     color: red ;
     font-size: 32px;
 font-weight: 800;
-    font-family: 'Spectral SC', serif;
+    font-family: 'Spectral SC', san serif;
 
 }
 abbr:hover{
     padding: 20px 30px;
     font-family: 'Spectral SC', serif;
     font-size: 35px;
-    padding: 10px;
-font-weight: 900;
-    font-weight: 600;
+    padding: 40px;
+    font-weight: 800;
     color: #f9ca24;
     text-shadow: #333;
     cursor: pointer;
@@ -570,9 +593,18 @@ font-weight: 900;
 }
 
 .education .box-container .box p{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color:#eee;
     padding: 3rem 1rem;
+}
+.education .box-container .box p:hover{
+    font-size: 1.8rem;
+    color:#eee;
+    padding: 3rem 1rem;
+    margin-top: 10px;
+    border-bottom:  3.5px solid rgb(4, 255, 38);
+border-radius: 15px;
+border-top:  3.5px solid rgb(4, 255, 38);; 
 }
 
 .education .box-container .box i{
@@ -623,16 +655,16 @@ font-weight: 900;
     border-radius: 65px;
     margin-top: 130px;
     width: 150px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-items: center;
     text-align: center;
-    height : 145;
-    padding: 2em;
+    height : 145px;
+    padding: 3rem;
 }
 .portfolio .box-container a:hover {
     color: yellow;
     height: 110px;
-    padding: 30px;
+    padding: 3rem;
     margin-top: -76px;
     text-align: center;
     align-items: center;
@@ -1282,6 +1314,8 @@ You'll see more info from below.. That's all ..
 <h1 class="heading"> Social <span>Platform Accounts</span> </h1>
 
 <div class="box-container">
+    <a href="https://www.linkedin.com/in/vigneshbalu33/"" target="_blank">
+            <i class="fab fa-linkedin fa-10x"></i></a>
         <a href="https://www.facebook.com/vickyofficl/" target="_blank">
             <i class="fab fa-facebook fa-10x"></i></a>
         <a href="https://instagram.com/vicky__officl/" target="_blank">
@@ -1382,7 +1416,7 @@ You'll see more info from below.. That's all ..
 </a>
 <!-- jquery cdn link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-/* particles */
+<!-- particles -->
 <!-- custom js file link  -->
 
 <script>
