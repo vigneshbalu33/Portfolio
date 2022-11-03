@@ -7,10 +7,12 @@
 <p align="left"> <a href="https://twitter.com/vicky__officl" target="blank"><img src="https://img.shields.io/twitter/follow/vicky__officl?logo=twitter&style=for-the-badge" alt="vicky__officl" /></a> </p>
 
 - 📫 Reach me **vigneshbalu33@gmail.com**
-              **vigneshbalu33@zohomail.com
-- 📄 Know about my experience [See in portpolio](See in portpolio)
+              **vigneshbalu33@zohomail.com**
+- 📄 want Know more About myself?? Kindly check the portfolio website..
 
 - ⚡ Fun fact **Love to Learn new Things.. Intrest to learn Linux...**
+ And  The portfolio that you are watching is not fully created by me..i know some basics and i applied lot of changes from original as per my convenience..
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
