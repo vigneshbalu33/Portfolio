@@ -8,7 +8,7 @@
 
 - 📫 Reach me **vigneshbalu33@gmail.com**
               **vigneshbalu33@zohomail.com**
-- 📄 want Know more About myself?? Kindly check the portfolio website..
+- 📄 Want to know more details About myself?? Kindly check the portfolio website..
 
 - ⚡ Fun fact **Love to Learn new Things.. Intrest to learn Linux...**
  And  The portfolio that you are watching is not fully created by me..i know some basics and i applied lot of changes from original as per my convenience..
