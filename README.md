@@ -11,7 +11,8 @@
               **vigneshbalu33@zohomail.in**
 - 📄 Want to know more details About myself?? Kindly check the portfolio website..
 
-- ⚡ Fun fact **Love to Learn new Things.. Intrest to learn Linux...**
+- ⚡ Fun fact : <br>
+   **Love to Learn new Things.. Intrest to learn Linux...**
  And  The portfolio that you are watching is not fully created by me..i know some basics and i applied lot of changes from original as per my convenience..
 
 
