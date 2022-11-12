@@ -6,8 +6,9 @@
 
 <p align="left"> <a href="https://twitter.com/vicky__officl" target="blank"><img src="https://img.shields.io/twitter/follow/vicky__officl?logo=twitter&style=for-the-badge" alt="vicky__officl" /></a> </p>
 
-- 📫 Reach me **vigneshbalu33@gmail.com**
-              **vigneshbalu33@zohomail.com**
+- 📫 Reach me  <br>
+**vigneshbalu33@gmail.com** <br>
+              **vigneshbalu33@zohomail.in**
 - 📄 Want to know more details About myself?? Kindly check the portfolio website..
 
 - ⚡ Fun fact **Love to Learn new Things.. Intrest to learn Linux...**
