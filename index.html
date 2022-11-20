@@ -69,6 +69,9 @@ body{
     padding-left: 35rem;
 }
 
+
+
+
 section{
     min-height: 100vh;
     padding:1rem;
@@ -169,7 +172,7 @@ header .user img{
     width: 18rem;
     border-radius: 20%;
     object-fit: cover;
-    margin-top: 50px;
+    margin-top: 5px;
     border: 0.5rem solid var(--red);
 }
 header .user img:hover{
@@ -226,25 +229,25 @@ header .navbar ul{
 header .navbar ul li a{
     display: block;
     transition-delay: 6s ease-in;
-    padding: 0.9rem;
+    padding: 0.6rem;
     margin:1.5rem 0;
-    background:#333;
+    background:rgb(54, 52, 52);
     font-family: 'Cinzel', serif;
     color:#fff;
     font-size: 2rem;
     border-top: 3px red solid;
+    border-left: 3px yellow solid;
     font-weight: 550;
     border-radius: 13px;
 }  
 
 header .navbar ul li a:hover{
     background: yellowgreen;
-    font-weight: 550;
     border-radius: 13px;
     color: black;
-    transition: 1.5s ease-out;
-    border: 4px rgb(255, 145, 0) solid;
-    box-shadow: inset 19.5em 0 0 0 yellow, inset -10.5em 0 0 0 red;
+    transition: 2.1s ease-out;
+    border: 3px rgb(255, 145, 0) solid;
+    box-shadow: inset 19.5em 0 0 0 yellow, inset -17.5em 0 0 0 red;
 /* }
 header .navbar ul li a:hover:before {
     animation: animate 1s linear forwards;
@@ -515,33 +518,51 @@ font-weight: 400;
 
 
 .education .box-container{
-    display: flex;
+    display: block;
+    position: relative;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 10rem 0;
+    padding: 1rem 0;
     padding-left: 1rem;
 }
 
+.education .box-container a{
+font-size: 17px;
+color: #c1c5c1;
+align-items: center;
+justify-content: center;
+padding-top: 0px;
+position: relative;
+margin-top: 0px;
+line-height: 30px;
+text-align: center;
+margin-left: 40%;
+}
+<!--
+
+.education .box-container a:hover{
+border: 0px rebeccapurple solid;
+color: #eee;
+} 
+-->
 .education .box-container .box{
-    width:27rem;
-    margin: 2rem 1rem;
-    padding-left: 1rem;
-    text-align: center;
+    width:auto;
+    margin: 3rem 1rem;
+    padding-left: 1rem 0;
+    padding: 2rem;
     border-left: 0.4rem solid rgb(4, 255, 38);
-    height: auto;
-    line-height: 20px;
+    line-height: 3px;
     position: relative;
     
 }
+
 .education .box-container .box:hover{
-    width:27rem;
-    margin: 2rem 1rem;
-    padding-left: 1rem;
-    text-align: center;
+    width:auto;
+    margin: 3rem 1rem;
+    padding-left: 1rem 0;
     border-left:solid transparent;
     height: auto;
-    line-height: 20px;
+    border-bottom: 0.4rem rgb(15, 252, 7) solid;
+    line-height: 10px;
     transition: ease-in;
     transition-delay: 0s;
     position: relative;
@@ -549,64 +570,56 @@ font-weight: 400;
 }
 
 .education .box-container .box span{
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     background: transparent;
     color: yellow;
     text-shadow: red 1px 1px;
     border-radius: 5rem;
-    padding: 4rem;
-    text-align: center;
-    align-items: center;
+    padding-left: 5rem;
+    margin-top: 10px;
     font-family: 'Cinzel', serif;
 }
 .education .box-container .box span:hover {
- font-size: 5.0rem;
+ font-size: 2.5rem;
  border: 0px yellow dashed;
- padding: 3rem;
+ padding-left: 5rem;
  cursor: pointer;
  font-weight: 800;
- margin-left: 0px;
+ margin-left: 10px;
  color: red;
 }
 abbr {
+text-align: left;
+justify-content: left;
     color: red ;
-    font-size: 32px;
-font-weight: 800;
+    font-size: 26px;
+font-weight: 1500;
     font-family: 'Spectral SC', san serif;
 
 }
 abbr:hover{
-    padding: 20px 30px;
+   
     font-family: 'Spectral SC', serif;
-    font-size: 35px;
-    padding: 40px;
-    font-weight: 800;
-    color: #f9ca24;
-    text-shadow: #333;
-    cursor: pointer;
+   
 }
 .education .box-container .box h3{
-    font-size: 32px;
+    font-size: 60px;
     color: red;
-    padding-top: 5rem;
+    text-align: left;
+    margin-left: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-shadow: rgba(51, 51, 51, 0.007) 1.5px 1.5px;
 }
 
 .education .box-container .box p{
     font-size: 1.8rem;
     color:#eee;
-    padding: 3rem 1rem;
-}
-.education .box-container .box p:hover{
-    font-size: 1.8rem;
-    color:#eee;
-    padding: 3rem 1rem;
     margin-top: 10px;
-    border-bottom:  3.5px solid rgb(4, 255, 38);
-border-radius: 15px;
-border-top:  3.5px solid rgb(4, 255, 38);; 
+    line-height: 2px;
+    padding: 1rem 1rem;
+    margin-left: 34px;
 }
-
 .education .box-container .box i{
     position: absolute;
     top:-1.5rem; left:-2.5rem;
@@ -634,33 +647,13 @@ border-top:  3.5px solid rgb(4, 255, 38);;
     flex-wrap: wrap;
     padding:5rem 0;
 }
-.box-container a{
-    border-right: 3px orchid solid;
-    padding: 3px 5px 1px 10px;
-    border-left: 3px orchid solid;
-    border-bottom: 3px orchid solid;
-    border-top: 3px orchid solid;
-    line-height: 30px;
-    border-radius: 85px;
 
-}
-.box-container a:hover {
-    border-right: 3px Green solid;
-    border-left: 3px green solid;
-    border-bottom: 3px green solid;
-    border-top: 3px green solid;
-    line-height: 35px;
-    border-radius: 45px;
-    font-weight:500;
-    transition: 1s;
-    padding: 70px;
-}
 
 .portfolio .box-container a{
     color: red;
     border: 0px  solid Yellow;
     border-radius: 65px;
-    margin-top: 130px;
+    margin-top: 100px;
     width: 150px;
     font-size: 1.3rem;
     align-items: center;
@@ -670,14 +663,12 @@ border-top:  3.5px solid rgb(4, 255, 38);;
 }
 .portfolio .box-container a:hover {
     color: yellow;
-    height: 110px;
-    padding: 3rem;
-    margin-top: -76px;
+    height: 190px;
+    padding: 2rem;
+    margin-top: 100px;
     text-align: center;
     align-items: center;
-    border: 0px transparent ;
-    transition: 1.02s;
-    transform:rotate(20deg)
+    transition: 1.2s;
 }
 .portfolio .box-container .box{
     height: 20rem;
@@ -1080,7 +1071,7 @@ justify-content: space-between;
     justify-content: space-around;
     }
     .education .box-container .box p{
-        font-size: 3rem;
+        font-size: 1.8rem;
 padding: 0rem 1rem;
     }
     .progress-container {
@@ -1145,8 +1136,9 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
  }
 </style>
 </head>
-<body>
-    
+<body>    
+
+
 <!-- header section starts  -->
 
 <header>
@@ -1161,6 +1153,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     </div>
 
     <nav class="navbar">
+        
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#about">professional</a></li>
@@ -1182,11 +1175,13 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 <div id="menu" class="fas fa-bars"></div>
 
+
+
 <!-- home section starts  -->
 
 <section class="home" id="home">
-
-    <h3>HI THERE !</h3>
+    
+     <h3>HI THERE !</h3>
     <h1>I'M <span>Vignesh Balu</span></h1>
     <p>Vignesh Balu from thanjavur.. Well u will know about me from by seeing this page ..
 
@@ -1219,18 +1214,19 @@ You'll see more info from below.. That's all ..
         <i class="fa fa-building-o"></i>
         <span> Up2datez Business Solution Pvt Limited, Kumbakonam </span> <br>
         <h3>Designation : Technical Associate</h3>
-      <pre><h3>Year             : Nov 2019 - Mar 2021</h3> </pre>  
+      <pre><h3>Year             : November 2019 - March 2021</h3> </pre>  
     <p>Annotating Images and Videos (2D & 3D) for Autonomous Vehicles</p>
     </div>
-<!--
+
     <div class="box">
-        <i class="fas fa-user"></i>
-        <span> Up2datez Business Solution Pvt Limited, Kumbakonam </span> <br>
-        <h3>Designation : Technical Associate</h3>
-      <pre><h3>Year             : Nov 2019 - Mar 2021</h3> </pre>  
-    <p>Annotating Images and Videos (2D & 3D) for Autonomous Vehicles</p>
+        <i class="fa fa-building-o"></i>
+        <span> Gateway Technologies pvt Ltd - Kilpauk </span> <br>
+        <h3>Designation : Technical Support </h3>
+      <pre><h3>Year             : April 2021 - Till now</h3> </pre>  
+    <p> Solve day by day Issues on users/client Computer by remote and Direct Visit </p>
+
     </div>
--->
+
     <a href="https://drive.google.com/file/d/1KhgbvJHuQE6f1fDfNWGW8zOyUWJGPT2w/view?usp=sharing" target="_blank"><button class="btn"> download CV/Resume <i class="fas fa-download"></i> </button></a>
 <!--
     
@@ -1281,52 +1277,36 @@ You'll see more info from below.. That's all ..
 
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
-        <span>2014</span>
+        <span>2013 - 2014</span>
         <h3><abbr title="Secondary School Leaving certificate">SSLC</abbr></h3>
-        <p> <br>
-            Studied In Govermnent High School Vanniyadi.<br> <!--<a href style="color: yellowgreen"="https://www.facebook.com" target="_blank">Click Here For Location</a> --> <br>
-         <br>
-         <br>
-            And passed out in Apr-2014 with the percentage of 85.06% in State Board of Tamilnadu.
-        </p>
+        <p> School : Government High School Vanniyadi </p>
+           <p> Board : State Board of Tamilnadu
+            <p>Percentage : 85.06 % </p>
+            <a href="https://goo.gl/maps/NA2W9uEWowVoaAEL9"> click to view Location </a>
+            
     </div>
 
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
-        <span>2016</span>
-        <h3><abbr title="Higher Secondary School">HSC</abbr></h3>        <p>
-            <br>      After completed my SSLC i started my HSC in 2015 at Goverment  Higher secondary School Papanasam.<br> <!--<a href style="color: yellowgreen"="https://www.google.com/maps/place/Govt.Boys+Higher+Secondary+School,+Papanasam,+Tamil+Nadu+614205/@10.9256227,79.2606121,19z/data=!4m13!1m7!3m6!1s0x0:0xcbd8bc31412cfcc2!2zMTDCsDU1JzMyLjkiTiA3OcKwMTUnMzkuMyJF!3b1!8m2!3d10.9258018!4d79.2609018!3m4!1s0x3baacef61c3b1707:0x5578091b52c4e327!8m2!3d10.9262212!4d79.2610604" target=_blank>Click Here For Location</a> --><br> and Passed out in 2016 with the percentage of 55.66% in Computer Science in State Board of Tamilnadu
-        </p>
+        <span>2013 - 2014</span>
+        <h3><abbr title="Higher Secondary School">HSC</abbr></h3>
+        <p> School : Government Boys Higher Secondary School,Papanasam.</p>
+           <p> Board : State Board of Tamilnadu
+         <p>Computer Science</p>
+            <p>Percentage : 55.06 % </p>
+            <a href="https://goo.gl/maps/cP1Biadp56DwHYrx5"> click to view Location </a>
     </div>
 
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
-        <span>2019</span>
-        <h3><abbr title="Bachelor of Computer science-Information Technology">BCS-IT</abbr></h3>
-        <p> After my Schools i joined Annai College Of Arts And Science with BSC-Information Technology in Kovilachery,Kumbakonam.<br> <!--<a href style="color: yellowgreen"="https://www.google.com/maps/place/%231+Annai+College+%7C+Arts+%26+Science+College+in+Thanjavur+Kumbakonam/@11.0312594,79.4127945,18z/data=!4m5!3m4!1s0x3a5532b1a871423b:0x6f9fefdb66e62314!8m2!3d11.0309275!4d79.4144523" target=_blank>Click Here For Location</a> --> <br> and Passed out in 2019 with the percentage of 64.00% in BSC-IT In Bharathidasan University</p>
+        <span>2016 - 2019</span>
+        <h3><abbr title="Bachelor of Computer Science">BSC</abbr></h3>
+        <p>College : Annai College of Arts & Science , Kumbakonam </p>
+        <p> University : Bharathidasan University</p>
+        <p>Bsc - Information Technology</p>
+        <p>Percentage : 66.04 % </p>
+        <a href="https://goo.gl/maps/17DjUH9KTHBkUY7P9"> click to view Location </a>    
     </div>
-<!--
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2019</span>
-        <h3>front end development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2020</span>
-        <h3>front end development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2021</span>
-        <h3>front end development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
-    </div> -->
-
 </div>
 
 </section>
@@ -1342,7 +1322,7 @@ You'll see more info from below.. That's all ..
 <div class="box-container">
     <a href="https://www.linkedin.com/in/vigneshbalu33/"" target="_blank">
             <i class="fab fa-linkedin fa-10x"></i></a>
-        <a href="https://www.facebook.com/vigneshbalu333/" target="_blank">
+        <a href="https://www.facebook.com/vigneshbalu03/" target="_blank">
             <i class="fab fa-facebook fa-10x"></i></a>
         <a href="https://instagram.com/vicky__officl/" target="_blank">
             <i class="fab fa-instagram fa-10x"></i></a>
@@ -1454,6 +1434,10 @@ $('#menu').click(function(){
   $(this).toggleClass('fa-times');
   $('header').toggleClass('toggle');
 });
+  
+
+  
+
 
 $(window).on('scroll load',function(){
 
@@ -1496,6 +1480,7 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+}
 </script>
 </body>
 </html>
