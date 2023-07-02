@@ -8,8 +8,8 @@
 
 - 📫 Reach me  <br>
 **vigneshbalu33@gmail.com** <br>
-              **vigneshbalu33@zohomail.in**
- **vigneshvicky9737@gmail.com** 
+              **vigneshbalu33@zohomail.in** <br>
+**vigneshvicky9737@gmail.com** <br>
 - 📄 Want to know more details About myself?? Kindly check the portfolio website..
 
 - ⚡ Fun fact : <br>
