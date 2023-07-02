@@ -50,7 +50,7 @@ html{
 }
 
 html::-webkit-scrollbar{
-    width:1.5rem;
+    width:0.7rem;
     border-radius: 4px;
 }
 
@@ -59,8 +59,9 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     border-radius: 40px;
+
 }
 
 body{
@@ -134,22 +135,24 @@ a:hover span {
 
 .progress-container {
   width: 74%;
-  height: 10px;
+  height: 8px;
   position: fixed;
   opacity: 100%;
   border-radius: 50px;
   transform-style: flat;
-  top: 0px;
+  top: 2px;
 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 }
 
 .progress-bar {
   width: 40%;
-  height: 10px;
-  border-radius: 0px;
+  height: 9px;
+  opacity: 90%;
+  border-radius: 50px;
   background: yellow;
   width: 50px;
+  top: 2px;
 }
 
 header{
@@ -170,20 +173,20 @@ header .user img{
     height: 18rem;
     align-items: center;
     width: 18rem;
-    border-radius: 20%;
+    border-radius: 10%;
     object-fit: cover;
-    margin-top: 5px;
-    border: 0.5rem solid var(--red);
+    margin-top: 02rem;
+    border: 0.3rem solid var(--red);
 }
 header .user img:hover{
-    height: 25rem;
+    height: 18rem;
     align-items: center;
-    width: 25rem;
+    width: 18rem;
     cursor:context-menu;
-    border-radius: 20%;
+    border-radius: 10%;
     object-fit: cover;
-    margin-top: 11rem;
-    border: 0.5rem dashed transparent;
+    margin-top: 03rem;
+    border: 0.4rem solid rgb(5, 247, 234);
     max-zoom: 90px;
     transform: scale(1.0);
 }
@@ -191,10 +194,11 @@ header .user .name{
     font-size: 3.5rem;
     color:#fff;
     font-family: 'Baumans', cursive;
+    cursor:pointer;
 }
 
 header .user .name:hover{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color:#fff;
     font-family: 'Baumans', cursive;
 }
@@ -206,7 +210,7 @@ header .user .post {
      font-weight: 700;
 } 
 header .user .post:hover {
-    font-size: 23px;
+    font-size: 21px;
     color:#00aeff;
     font-family: 'Ubuntu', sans-serif;
      font-weight: 1100;
@@ -235,10 +239,10 @@ header .navbar ul li a{
     background:rgb(54, 52, 52);
     color:#fff;
     font-size: 2rem;
-    border-top: 3px red solid;
-    border-left: 3px yellow solid;
+    border-top: 2px red solid;
+    border-left: 2px rgb(245, 6, 6) solid;
     font-weight: 550;
-    border-radius: 13px;
+    border-radius: 10px;
 }  
 
 header .navbar ul li a:hover{
@@ -246,10 +250,11 @@ header .navbar ul li a:hover{
     font-family: 'Ubuntu' , sans-serif;
     border-radius: 13px;
     color: black;
-    transition: 2.1s ease-out;
+    transition: 1.0s ease-out;
     border: 3px rgb(255, 145, 0) solid;
     box-shadow: inset 19.5em 0 0 0 yellow, inset -17.5em 0 0 0 red;
-/* }
+ }
+/*
 header .navbar ul li a:hover:before {
     animation: animate 1s linear forwards;
     background: transparent;
@@ -280,7 +285,7 @@ header .navbar ul li a:hover:before {
         border-bottom-color: transparent; 
         border-left-color: transparent;
     }  */
-}
+
 #menu{
     position: fixed;
     top:2rem; right:2rem;
@@ -353,19 +358,15 @@ header .navbar ul li a:hover:before {
 }
 .home p:hover{
     border-left: 3px yellow solid;
-    font-size: 2.1rem;
+    font-size: 2rem;
     color: whitesmoke;
-    padding: 30px;
-    padding-left: 50px;
+    padding: 20px;
+    padding-left: 30px;
     height: auto;
     cursor: all-scroll;
     font-weight: 300;
-    transition: 1.5s;
+    transition: 1.0s;
 }
-
-
-
-
 
 .about .box-containerr{
     display: block;
@@ -373,7 +374,7 @@ header .navbar ul li a:hover:before {
     margin-top: 3rem ;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 1rem 0;
     padding-left: 1rem;
 }
 
@@ -409,7 +410,7 @@ line-height: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
 .about .box-containerr span:hover{
-    font-size: 26px;
+    font-size: 25px;
     background: transparent;
     color: var(--yellow);
     border-radius: 1rem;
@@ -770,9 +771,9 @@ border-top: yellow 3px solid;
     display: flex;
     text-align: left;line-height: 25px;
     text-indent: 0px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: rgb(255, 255, 255);
-    padding: 15px 15px;
+    padding: 10px 10px;
     font-weight: normal;
 }
 .contact .row .content .info h3:hover{
@@ -781,7 +782,7 @@ border-top: yellow 3px solid;
     text-indent: 0px;
     font-size: 2.2rem;
     color: white;
-    padding: 10px 55px;
+    padding: 15px 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -1183,14 +1184,15 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     
      <h3>HI THERE !</h3>
     <h1>I'M <span>Vignesh Balu</span></h1>
-    <p>Vignesh Balu from thanjavur.. Well u will know about me from by seeing this page ..
-
-<br>
+    <p>     Hai, Myself I'm  Vignesh Balu from Thanjavur, Tamilnadu, India.. <br>
         <br>
-And I'm a techie guy who had craze  about on <span class="Hard">Hardware and Networking</span> things.. <br>
- <br>
- known some basic HTML and Known some basics CSS .. <br>
-You'll see more info from below.. That's all .. 
+Currently Working as a Desktop Support Engineer and Have experience more than 1.8 Years in the Same Field... <br> 
+<br>
+
+Become a System Administrator is my Focused Dream with Multi Skills.. <br>
+A Enthusiastic person who loves Web Developing and Networking Things.. <br>
+<br>
+	Well you will know About me By scroll Down or Select Category in Hamburger Menu.. 
 <br>
 
 <p style="font-size: 30px; color: Yellow">Thanking You
@@ -1212,32 +1214,31 @@ You'll see more info from below.. That's all ..
 
     <div class="box">
         <i class="fa fa-building-o"></i>
-        <span> Up2datez Business Solution Pvt Limited, Kumbakonam </span> <br>
+        <span> Up2datez Business Solution Pvt Limited - Kumbakonam. </span> <br>
         <h3>Designation : Technical Associate</h3>
       <pre><h3>Year             : November 2019 - March 2021</h3> </pre>  
     <p>Annotating Images and Videos (2D & 3D) for Autonomous Vehicles</p>
     </div>
-<!--
+
     <div class="box">
         <i class="fa fa-building-o"></i>
-        <span> Gateway Technologies pvt Ltd - Kilpauk </span> <br>
-        <h3>Designation : Technical Support </h3>
-      <pre><h3>Year             : April 2021 - Till now</h3> </pre>  
-    <p> Solve day by day Issues on users/client Computer by remote and Direct Visit </p>
+        <span> Gateway Technologies pvt Ltd - Kilpauk , Chennai.  </span> <br>
+        <h3>Designation : Desktop Support Engineer </h3>
+      <pre><h3>Year             : April 2021 - February 2023</h3> </pre>  
+    <p> Providing Technical Support to  users/client Computer by remote and Direct Visit </p>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-building-o"></i>
+        <span> Cantik Technologies Pvt Limited - Gurugram, Haryana, India. </span> <br>
+        <h3>Designation : Desktop Support Engineer </h3>
+      <pre><h3>Year             : February 2023 - Till Now</h3> </pre>  
+    <p> Working as a Desktop Support Engineer In Apollo Tyres Plant , Sriperumbuddhur.. Day by Day Activities are Providing Technical Support to users , Solving Ticket Issues and etc.. </p>
 
     </div>
 
     <a href="https://drive.google.com/file/d/1KhgbvJHuQE6f1fDfNWGW8zOyUWJGPT2w/view?usp=sharing" target="_blank"><button class="btn"> download CV/Resume <i class="fas fa-download"></i> </button></a>
     
-        <div class="box">
-        <i class="fas fa-desktop"></i>
-        <span> Up2datez Business Solution Pvt Limited, Kumbakonam </span> <br>
-        <h3>Designation : Technical Associate</h3>
-      <pre><h3>Year        : Nov 2019 - Mar 2021</h3> </pre>  
-    <p>Annotating Images and Videos (2D & 3D) for Autonomous Vehicles</p>
-    </div>
-     -->
-
 
 
        
@@ -1378,9 +1379,8 @@ You'll see more info from below.. That's all ..
 
         <div class="info">
             <h3> <i class="fas fa-envelope"></i> vigneshbalu33@gmail.com <br>
- vigneshbalu33@zohomail.in
-                <br>
-            vigneshbalu33@protonmail.com 
+            Vigneshvicky9737@gmail.com    <br>
+            
         <br>
         </h3>
             <h3> <i class="fas fa-mobile"></i></a>+919788761210 
