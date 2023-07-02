@@ -1,4 +1,4 @@
-<h3 align="center">A passionate Hardware, Networking Enthusiastic and  frontend lover from India</h3>
+<h3 align="center">A passionate Hardware, Networking Enthusiastic and  frontend lover from India,Tamilnadu, Thanjavur</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vigneshbalu33&label=Profile%20views&color=0e75b6&style=flat" alt="vigneshbalu33" /> </p>
 
@@ -9,6 +9,7 @@
 - 📫 Reach me  <br>
 **vigneshbalu33@gmail.com** <br>
               **vigneshbalu33@zohomail.in**
+ **vigneshvicky9737@gmail.com** 
 - 📄 Want to know more details About myself?? Kindly check the portfolio website..
 
 - ⚡ Fun fact : <br>
