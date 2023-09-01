@@ -4,11 +4,10 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vigneshbalu33" alt="vigneshbalu33" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/vigneshbalu33" target="blank"><img src="https://img.shields.io/twitter/follow/vicky__officl?logo=twitter&style=for-the-badge" alt="vigneshbalu33" /></a> </p>
+<p align="left"> <a href="https://twitter.com/vigneshbalu33" target="blank"><img src="https://img.shields.io/twitter/follow/vigneshbalu33?logo=twitter&style=for-the-badge" alt="Vignesh Balu" /></a> </p>
 
 - 📫 Reach me  <br>
 **vigneshbalu33@gmail.com** <br>
-              **vigneshbalu33@zohomail.in** <br>
 **vigneshvicky9737@gmail.com** <br>
 - 📄 Want to know more details About myself?? Kindly check the portfolio website..
 
