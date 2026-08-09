@@ -6,6 +6,8 @@
   <meta name="description" content="Vignesh Balu — Technical Support Engineer, Hardware & Networking Enthusiast." />
   <meta name="theme-color" content="#0b1020" />
   <title>Vignesh Balu | Technical Support Engineer</title>
+  <link rel="icon" type="image/png" href="https://drive.google.com/thumbnail?id=1WZZ_mwEyliDJbM5XzrXMeXDPXNhfFzeb&sz=w256" />
+  <link rel="apple-touch-icon" href="https://drive.google.com/thumbnail?id=1WZZ_mwEyliDJbM5XzrXMeXDPXNhfFzeb&sz=w256" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -149,6 +151,20 @@
     .reveal.visible { opacity: 1; transform: none; }
     .cursor-glow { position: fixed; width: 280px; height: 280px; border-radius: 50%; pointer-events: none; background: radial-gradient(circle, rgba(56,189,248,.08), transparent 68%); transform: translate(-50%,-50%); z-index: -1; }
 
+
+    /* Theme selector */
+    .theme-toggle{position:fixed;right:18px;bottom:18px;z-index:1600;width:50px;height:50px;border-radius:16px;border:1px solid var(--line);background:rgba(15,23,42,.92);color:var(--text);cursor:pointer;display:grid;place-items:center;box-shadow:0 14px 35px rgba(0,0,0,.3);backdrop-filter:blur(16px);transition:.25s var(--ease)}
+    .theme-toggle:hover{transform:translateY(-4px) rotate(8deg);border-color:var(--accent);color:var(--accent)}
+    .theme-panel{position:fixed;right:18px;bottom:78px;z-index:1599;width:min(310px,calc(100vw - 36px));padding:16px;border:1px solid var(--line);border-radius:20px;background:rgba(10,15,28,.95);backdrop-filter:blur(22px);box-shadow:0 24px 70px rgba(0,0,0,.42);opacity:0;visibility:hidden;transform:translateY(12px) scale(.97);transition:.25s var(--ease)}
+    .theme-panel.open{opacity:1;visibility:visible;transform:none}.theme-panel h3{font-size:1rem;margin-bottom:4px}.theme-panel p{color:var(--muted);font-size:.78rem;margin-bottom:13px}.theme-options{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.theme-option{display:flex;align-items:center;gap:9px;padding:10px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--text);cursor:pointer;text-align:left;transition:.2s var(--ease)}.theme-option:hover,.theme-option.active{border-color:var(--accent);background:rgba(255,255,255,.07);transform:translateY(-2px)}.theme-swatch{width:25px;height:25px;flex:0 0 25px;border-radius:9px;background:linear-gradient(135deg,var(--sw1),var(--sw2));box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}.theme-option span:last-child{font-size:.78rem;font-weight:700}
+    body[data-theme="ocean"]{--bg:#070b14;--surface:rgba(15,23,42,.72);--surface-2:#111827;--text:#f8fafc;--muted:#94a3b8;--line:rgba(148,163,184,.16);--accent:#facc15;--accent-2:#38bdf8}
+    body[data-theme="purple"]{--bg:#0d0816;--surface:rgba(30,20,52,.72);--surface-2:#211538;--text:#faf5ff;--muted:#c4b5d8;--line:rgba(196,181,216,.18);--accent:#c084fc;--accent-2:#f472b6}
+    body[data-theme="emerald"]{--bg:#06110d;--surface:rgba(8,32,25,.72);--surface-2:#0d251d;--text:#ecfdf5;--muted:#9ab9ad;--line:rgba(154,185,173,.17);--accent:#34d399;--accent-2:#2dd4bf}
+    body[data-theme="red"]{--bg:#120708;--surface:rgba(38,15,18,.72);--surface-2:#2b1115;--text:#fff7f7;--muted:#c7a5a8;--line:rgba(199,165,168,.17);--accent:#fb7185;--accent-2:#f97316}
+    body[data-theme="gold"]{--bg:#100c04;--surface:rgba(40,31,13,.72);--surface-2:#29200c;--text:#fffdf5;--muted:#c9b98f;--line:rgba(201,185,143,.18);--accent:#fbbf24;--accent-2:#fde68a}
+    body[data-theme="mono"]{--bg:#0a0a0a;--surface:rgba(28,28,28,.75);--surface-2:#1c1c1c;--text:#fafafa;--muted:#a3a3a3;--line:rgba(255,255,255,.13);--accent:#fff;--accent-2:#a3a3a3}
+    @media(max-width:520px){.theme-toggle{right:14px;bottom:14px}.theme-panel{right:14px;bottom:76px}}
+
     @media (max-width: 1050px) {
       :root { --sidebar: 245px; }
       .education-grid, .social-grid { grid-template-columns: 1fr 1fr; }
@@ -178,9 +194,22 @@
     }
   </style>
 </head>
-<body>
+<body data-theme="ocean">
   <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
   <div class="cursor-glow" id="cursorGlow"></div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Choose website theme" aria-expanded="false" title="Choose theme"><i class="fa-solid fa-palette"></i></button>
+  <div class="theme-panel" id="themePanel" aria-label="Website theme selector">
+    <h3>Choose a skin</h3><p>Pick a color style. Your choice is saved on this device.</p>
+    <div class="theme-options">
+      <button class="theme-option" data-theme="ocean" type="button"><span class="theme-swatch" style="--sw1:#38bdf8;--sw2:#facc15"></span><span>Ocean</span></button>
+      <button class="theme-option" data-theme="purple" type="button"><span class="theme-swatch" style="--sw1:#c084fc;--sw2:#f472b6"></span><span>Neon Purple</span></button>
+      <button class="theme-option" data-theme="emerald" type="button"><span class="theme-swatch" style="--sw1:#34d399;--sw2:#2dd4bf"></span><span>Emerald</span></button>
+      <button class="theme-option" data-theme="red" type="button"><span class="theme-swatch" style="--sw1:#fb7185;--sw2:#f97316"></span><span>Crimson</span></button>
+      <button class="theme-option" data-theme="gold" type="button"><span class="theme-swatch" style="--sw1:#fbbf24;--sw2:#fde68a"></span><span>Royal Gold</span></button>
+      <button class="theme-option" data-theme="mono" type="button"><span class="theme-swatch" style="--sw1:#fff;--sw2:#737373"></span><span>Monochrome</span></button>
+    </div>
+  </div>
+
 
   <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
 
@@ -335,6 +364,14 @@
         cursorGlow.style.top = `${e.clientY}px`;
       }, { passive: true });
     } else cursorGlow.remove();
+
+
+    const themeToggle=document.getElementById('themeToggle'),themePanel=document.getElementById('themePanel'),themeOptions=[...document.querySelectorAll('.theme-option')];
+    function applyTheme(theme){document.body.dataset.theme=theme;localStorage.setItem('portfolio-theme',theme);themeOptions.forEach(b=>b.classList.toggle('active',b.dataset.theme===theme));const m=document.querySelector('meta[name="theme-color"]');if(m)m.content={ocean:'#0b1020',purple:'#10091b',emerald:'#07130f',red:'#16080a',gold:'#120d04',mono:'#0b0b0b'}[theme]||'#0b1020'}
+    applyTheme(localStorage.getItem('portfolio-theme')||'ocean');
+    themeToggle.addEventListener('click',e=>{e.stopPropagation();const o=themePanel.classList.toggle('open');themeToggle.setAttribute('aria-expanded',String(o))});
+    themeOptions.forEach(b=>b.addEventListener('click',()=>{applyTheme(b.dataset.theme);themePanel.classList.remove('open');themeToggle.setAttribute('aria-expanded','false')}));
+    document.addEventListener('click',e=>{if(!themePanel.contains(e.target)&&!themeToggle.contains(e.target)){themePanel.classList.remove('open');themeToggle.setAttribute('aria-expanded','false')}});
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
