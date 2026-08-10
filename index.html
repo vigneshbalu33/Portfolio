@@ -70,6 +70,26 @@
     }
     .name { font: 700 1.7rem/1.1 "Space Grotesk", sans-serif; letter-spacing: -.03em; }
     .role { margin-top: 10px; color: var(--accent); font-size: .88rem; font-weight: 700; }
+    .tech-role-icon {
+      display: inline-flex;
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+      align-items: center;
+      justify-content: center;
+      vertical-align: -2px;
+      color: var(--accent-2);
+      font-size: .9rem;
+    }
+    .tech-role-icon.icon-change {
+      animation: techRoleIconChange .45s var(--ease);
+    }
+    @keyframes techRoleIconChange {
+      0% { opacity: 0; transform: translateY(7px) scale(.65) rotate(-12deg); }
+      60% { opacity: 1; transform: translateY(0) scale(1.12) rotate(4deg); }
+      100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+    }
+
     .nav { margin-top: 30px; display: grid; gap: 8px; }
     .nav a {
       display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px;
@@ -343,7 +363,7 @@
       <div class="profile">
         <img class="avatar" src="https://drive.google.com/thumbnail?id=1WZZ_mwEyliDJbM5XzrXMeXDPXNhfFzeb&sz" alt="Vignesh Balu" />
         <div class="name">Vignesh Balu</div>
-        <div class="role">IT Support | Learning Networking</div>
+        <div class="role">IT Support | Learning Networking <span class="tech-role-icon" id="techRoleIcon" aria-hidden="true"><i class="fa-solid fa-headset"></i></span></div>
       </div>
       <nav class="nav" aria-label="Primary navigation">
         <a class="active" href="#home"><i class="fa-solid fa-house"></i> Home</a>
@@ -561,6 +581,36 @@ Type "help" to see available commands.</div>
   <footer>© <span id="year"></span> Vignesh Balu. Built for a cleaner, faster portfolio experience.</footer>
 
   <script>
+    // Animated tech icon beside the sidebar role — changes every 1.5 seconds.
+    const techRoleIcon = document.getElementById('techRoleIcon');
+    const techRoleIcons = [
+      'fa-headset',
+      'fa-desktop',
+      'fa-laptop',
+      'fa-screwdriver-wrench',
+      'fa-network-wired',
+      'fa-wifi',
+      'fa-server',
+      'fa-globe',
+      'fa-shield-halved',
+      'fa-terminal',
+      'fa-gear'
+    ];
+    let techRoleIconIndex = 0;
+
+    function changeTechRoleIcon() {
+      if (!techRoleIcon) return;
+      techRoleIcon.classList.remove('icon-change');
+      void techRoleIcon.offsetWidth;
+      techRoleIconIndex = (techRoleIconIndex + 1) % techRoleIcons.length;
+      techRoleIcon.innerHTML = `<i class="fa-solid ${techRoleIcons[techRoleIconIndex]}"></i>`;
+      techRoleIcon.classList.add('icon-change');
+    }
+
+    if (techRoleIcon && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(changeTechRoleIcon, 1500);
+    }
+
     const menuBtn = document.getElementById('menuBtn');
     const sidebar = document.getElementById('sidebar');
     const progressBar = document.getElementById('progressBar');
@@ -646,7 +696,7 @@ Type "help" to see available commands.</div>
     const terminalOutput = document.getElementById('terminalOutput');
     const terminalCommands = {
       help: 'Available commands:\\n  about       — profile summary\\n  skills      — core support skills\\n  experience  — career overview\\n  education   — academic background\\n  contact     — contact details\\n  clear       — clear terminal',
-      about: "Vignesh Balu\\nTechnical Support Engineer / Hardware & Networking Enthusiast.",
+      about: "Vignesh Balu\\nTechnical Support Engineer / Learning Networking.",
       skills: "Windows & Desktop Support\\nHardware Troubleshooting\\nMicrosoft Applications\\nEnd User Support\\nPrinter Support\\nNetwork Monitoring",
       experience: "2019–2021  Technical Associate\\n2021–2023  Desktop Support Engineer\\n2023–Now   Desktop Support Engineer\\n2025–Now   End User Support Engineer",
       education: "SSLC • Government High School Vanniyadi\\nHSC  • Government Boys Higher Secondary School, Papanasam\\nB.Sc. IT • Annai College of Arts & Science",
