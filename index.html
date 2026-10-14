@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Premium redesign based on the supplied source; original content, links, dates, percentages, and interactive features retained. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -329,149 +328,13 @@
       *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
       .reveal { opacity: 1; transform: none; }
     }
-  
-/* ===== Premium UI + Motion Upgrade ===== */
-body{isolation:isolate;background:radial-gradient(circle at 78% 8%,color-mix(in srgb,var(--accent-2) 14%,transparent),transparent 24%),radial-gradient(circle at 18% 72%,color-mix(in srgb,var(--accent) 10%,transparent),transparent 28%),var(--bg)}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;opacity:.32;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(to bottom,#000,transparent 78%)}
-.main,footer{position:relative;z-index:1}.cursor-glow{z-index:0;width:360px;height:360px;opacity:.7;mix-blend-mode:screen;transition:left .12s ease-out,top .12s ease-out}
-.sidebar{box-shadow:18px 0 60px rgba(0,0,0,.12);background:linear-gradient(180deg,rgba(8,12,23,.9),rgba(8,12,23,.72))}.sidebar::before{content:"";position:absolute;top:0;right:-1px;width:1px;height:100%;background:linear-gradient(transparent,var(--accent-2),var(--accent),transparent);opacity:.45}
-.avatar{transition:transform .55s var(--ease),box-shadow .55s var(--ease);animation:avatarFloat 5s ease-in-out infinite}.avatar:hover{transform:translateY(-5px) scale(1.025);box-shadow:0 0 0 8px color-mix(in srgb,var(--accent) 10%,transparent),0 22px 60px rgba(0,0,0,.35)}@keyframes avatarFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.name{background:linear-gradient(110deg,var(--text),var(--accent-2),var(--text));background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:nameShimmer 7s linear infinite}@keyframes nameShimmer{to{background-position:220% center}}
-.nav a{position:relative;overflow:hidden}.nav a::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--accent-2) 10%,transparent),transparent);transform:translateX(-105%);transition:transform .4s var(--ease)}.nav a:hover::before,.nav a.active::before{transform:translateX(0)}.nav a>*{position:relative;z-index:1}
-.hero{position:relative;overflow:hidden}.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero::before{width:420px;height:420px;right:4%;top:10%;background:radial-gradient(circle,color-mix(in srgb,var(--accent-2) 10%,transparent),transparent 68%);animation:heroOrb 9s ease-in-out infinite}.hero::after{width:260px;height:260px;right:28%;bottom:5%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 8%,transparent),transparent 70%);animation:heroOrb 7s ease-in-out infinite reverse}@keyframes heroOrb{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-18px,16px,0) scale(1.08)}}.hero .container{position:relative;z-index:2}
-.hero h1{animation:heroTitleIn .9s var(--ease) both;text-wrap:balance}.hero h1 span{display:inline-block;text-shadow:0 0 40px color-mix(in srgb,var(--accent) 20%,transparent);animation:accentPulse 4s ease-in-out infinite}@keyframes heroTitleIn{from{opacity:0;transform:translateY(28px);filter:blur(8px)}to{opacity:1;transform:none;filter:blur(0)}}@keyframes accentPulse{0%,100%{text-shadow:0 0 28px color-mix(in srgb,var(--accent) 10%,transparent)}50%{text-shadow:0 0 48px color-mix(in srgb,var(--accent) 25%,transparent)}}
-.hero-copy{animation:copyIn .8s .16s var(--ease) both}.hero-copy+.hero-copy{animation-delay:.26s}.hero-actions{animation:copyIn .8s .38s var(--ease) both}.hero-meta{animation:copyIn .8s .52s var(--ease) both}@keyframes copyIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.pill{position:relative;overflow:hidden;transition:transform .25s var(--ease),border-color .25s ease,color .25s ease}.pill:hover{color:var(--text);border-color:color-mix(in srgb,var(--accent-2) 45%,var(--line));transform:translateY(-3px)}
-.btn{position:relative;overflow:hidden;isolation:isolate}.btn::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.22),transparent 55%);transform:translateX(-120%);transition:transform .65s var(--ease);z-index:-1}.btn:hover::before{transform:translateX(120%)}.btn i{transition:transform .3s var(--ease)}.btn:hover i{transform:translateX(4px)}
-.experience-card,.edu-card,.social-card,.skill-card,.service-card,.stack-card,.learning-card,.contact-card,.contact-form,.network-visual,.terminal{position:relative;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.035),0 22px 70px rgba(0,0,0,.2);will-change:transform}.experience-card::after,.edu-card::after,.social-card::after,.skill-card::after,.service-card::after,.stack-card::after,.learning-card::after,.contact-card::after,.contact-form::after,.network-visual::after,.terminal::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.06),transparent 24%,transparent 72%,color-mix(in srgb,var(--accent-2) 5%,transparent));opacity:.55}
-.edu-icon,.service-icon,.stack-icon,.project-icon,.cert-icon{transition:transform .35s var(--ease),box-shadow .35s ease}.edu-card:hover .edu-icon,.service-card:hover .service-icon,.stack-card:hover .stack-icon{transform:translateY(-4px) rotate(-4deg) scale(1.06);box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 12%,transparent)}
-.skill-fill{position:relative;box-shadow:0 0 18px color-mix(in srgb,var(--accent-2) 30%,transparent)}.skill-fill::after{content:"";position:absolute;top:0;right:0;width:45px;height:100%;background:rgba(255,255,255,.3);filter:blur(8px);animation:skillShine 2.8s ease-in-out infinite}@keyframes skillShine{0%,35%{opacity:0;transform:translateX(-20px)}55%{opacity:.9;transform:translateX(8px)}75%,100%{opacity:0;transform:translateX(25px)}}
-.network-visual{background:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--accent-2) 6%,transparent),transparent 42%),rgba(15,23,42,.52)}.network-node{transition:transform .4s var(--ease),border-color .4s ease,box-shadow .4s ease;animation:nodeFloat 4.5s ease-in-out infinite}.network-node:hover{transform:translateY(-8px) scale(1.07);border-color:var(--accent-2);box-shadow:0 0 28px color-mix(in srgb,var(--accent-2) 18%,transparent)}@keyframes nodeFloat{0%,100%{translate:0 0}50%{translate:0 -4px}}
-.terminal{border-color:color-mix(in srgb,var(--accent-2) 22%,var(--line))}.terminal-dot{animation:terminalBlink 2.4s ease-in-out infinite}.terminal-dot:nth-child(2){animation-delay:.25s}.terminal-dot:nth-child(3){animation-delay:.5s}@keyframes terminalBlink{0%,100%{opacity:.55}50%{opacity:1;box-shadow:0 0 12px currentColor}}
-.theme-toggle{animation:themeFloat 4s ease-in-out infinite}@keyframes themeFloat{0%,100%{box-shadow:0 14px 35px rgba(0,0,0,.3)}50%{box-shadow:0 18px 45px rgba(0,0,0,.38),0 0 24px color-mix(in srgb,var(--accent-2) 10%,transparent)}}
-.reveal{opacity:0;transform:translateY(28px) scale(.985);filter:blur(4px);transition:opacity .75s var(--ease),transform .75s var(--ease),filter .75s var(--ease)}.reveal.visible{opacity:1;transform:none;filter:blur(0)}
-.skills-grid .reveal:nth-child(n+2),.services-grid .reveal:nth-child(n+2),.stack-grid .reveal:nth-child(n+2),.education-grid .reveal:nth-child(n+2),.social-grid .reveal:nth-child(n+2){transition-delay:calc((var(--i,1) - 1)*.06s)}
-@media(max-width:800px){.cursor-glow{display:none}.hero::before{right:-25%}.hero::after{right:-15%}}
-@media(prefers-reduced-motion:reduce){.avatar,.name,.hero::before,.hero::after,.hero h1,.hero h1 span,.hero-copy,.hero-actions,.hero-meta,.theme-toggle,.network-node,.terminal-dot{animation:none!important}.reveal{filter:none}}
-</style>
+  </style>
 
   <!-- Phoenix favicon: transparent, tightly cropped, fills the browser tab -->
 
 
   <!-- Font Awesome Phoenix Framework favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj4KICA8cGF0aCBmaWxsPSIjZmYwODA4IiBkPSJNMjEyLjkgMzQ0LjNjMy44LS4xIDIyLjgtMS40IDI1LjYtMi4yLTIuNC0yLjYtNDMuNi0xLTY4LTQ5LjYtNC4zLTguNi03LjUtMTcuNi02LjQtMjcuNiAyLjktMjUuNSAzMi45LTMwIDUyLTE4LjUgMzYgMjEuNiA2My4zIDkxLjMgMTEzLjcgOTcuNSAzNyA0LjUgODQuNi0xNyAxMDguMi00NS40LS42LS4xLS44LS4yLTEtLjEtLjQuMS0uOC4yLTEuMS4zLTMzLjMgMTIuMS05NC4zIDkuNy0xMzQuNy0xNC44LTM3LjYtMjIuOC01My4xLTU4LjctNTEuOC03NC42IDEuOC0yMS4zIDIyLjktMjMuMiAzNS45LTE5LjYgMTQuNCAzLjkgMjQuNCAxNy42IDM4LjkgMjcuNCAxNS42IDEwLjQgMzIuOSAxMy43IDUxLjMgMTAuMyAxNC45LTIuNyAzNC40LTEyLjMgMzYuNS0xNC41LTEuMS0uMS0xLjgtLjEtMi41LS4yLTYuMi0uNi0xMi40LS44LTE4LjUtMS43QzI3OS44IDE5NC41IDI2Mi4xIDQ3LjQgMTM4LjUgMzcuOSA5NC4yIDM0LjUgMzkuMSA0NiAyLjIgNzIuOWMtLjguNi0xLjUgMS4yLTIuMiAxLjguMS4yLjEuMy4yLjUuOCAwIDEuNi0uMSAyLjQtLjIgNi4zLTEgMTIuNS0uOCAxOC43LjMgMjMuOCA0LjMgNDcuNyAyMy4xIDU1LjkgNzYuNSA1LjMgMzQuMy0uNyA1MC44IDggODYuMSAxOSA3Ny4xIDkxIDEwNy42IDEyNy43IDEwNi40ek03NS4zIDY0LjljLS45LTEtLjktMS4yLTEuMy0yIDEyLjEtMi42IDI0LjItNC4xIDM2LjYtNC44LTEuMSAxNC43LTIyLjIgMjEuMy0zNS4zIDYuOHptMTk2LjkgMzUwLjVjLTQyLjggMS4yLTkyLTI2LjctMTIzLjUtNjEuNC00LjYtNS0xNi44LTIwLjItMTguNi0yMy40bC40LS40YzYuNiA0LjEgMjUuNyAxOC42IDU0LjggMjcgMjQuMiA3IDQ4LjEgNi4zIDcxLjYtMy4zIDIyLjctOS4zIDQxLS41IDQzLjEgMi45LTE4LjUgMy44LTIwLjEgNC40LTI0IDcuOS01LjEgNC40LTQuNiAxMS43IDcgMTcuMiAyNi4yIDEyLjQgNjMtMi44IDk3LjIgMjUuNCAyLjQgMiA4LjEgNy44IDEwLjEgMTAuNy0uMS4yLS4zLjMtLjQuNS00LjgtMS41LTE2LjQtNy41LTQwLjItOS4zLTI0LjctMi00Ni4zIDUuMy03Ny41IDYuMnptMTc0LjgtMjUyYzE2LjQtNS4yIDQxLjMtMTMuNCA2Ni41LTMuMyAxNi4xIDYuNSAyNi4yIDE4LjcgMzIuMSAzNC42IDMuNSA5LjQgNS4xIDE5LjcgNS4xIDI4LjctLjIgMC0uNCAwLS42LjEtLjItLjQtLjQtLjktLjUtMS4zLTUtMjItMjkuOS00My44LTY3LjYtMjkuOS01MC4yIDE4LjYtMTMwLjQgOS43LTE3Ni45LTQ4LS43LS45LTIuNC0xLjctMS4zLTMuMi4xLS4yIDIuMS42IDMgMS4zIDE4LjEgMTMuNCAzOC4zIDIxLjkgNjAuMyAyNi4yIDMwLjUgNi4xIDU0LjYgMi45IDc5LjktNS4yem0xMDIuNyAxMTcuNWMtMzIuNC4yLTMzLjggNTAuMS0xMDMuNiA2NC40LTE4LjIgMy43LTM4LjcgNC42LTQ0LjkgNC4ydi0uNGMyLjgtMS41IDE0LjctMi42IDI5LjctMTYuNiA3LjktNy4zIDE1LjMtMTUuMSAyMi44LTIyLjkgMTkuNS0yMC4yIDQxLjQtNDIuMiA4MS45LTM5IDIzLjEgMS44IDI5LjMgOC4yIDM2LjEgMTIuNy4zLjIuNC41LjcuOS0uNSAwLS43LjEtLjkgMC03LTIuNy0xNC4zLTMuMy0yMS44LTMuM3ptLTEyLjMtMjQuMWMtLjEuMi0uMS40LS4yLjYtMjguOS00LjQtNDgtNy45LTY4LjUgNC0xNyA5LjktMzEuNCAyMC41LTYyIDI0LjQtMjcuMSAzLjQtNDUuMSAyLjQtNjYuMS04LS4zLS4yLS42LS40LTEtLjYgMC0uMi4xLS4zLjEtLjUgMjQuOSAzLjggMzYuNCA1LjEgNTUuNS01LjggMjIuMy0xMi45IDQwLjEtMjYuNiA3MS4zLTMxIDI5LjYtNC4xIDUxLjMgMi41IDcwLjkgMTYuOXpNMjY4LjYgOTcuM2MtLjYtLjYtMS4xLTEuMi0yLjEtMi4zIDcuNiAwIDI5LjctMS4yIDUzLjQgOC40IDE5LjcgOCAzMi4yIDIxIDUwLjIgMzIuOSAxMS4xIDcuMyAyMy40IDkuMyAzNi40IDguMSA0LjMtLjQgOC41LTEuMiAxMi44LTEuNy40LS4xLjkgMCAxLjUuMy0uNi40LTEuMi45LTEuOCAxLjItOC4xIDQtMTYuNyA2LjMtMjUuNiA3LjEtMjYuMSAyLjYtNTAuMy0zLjctNzMuNC0xNS40LTE5LjMtOS45LTM2LjQtMjIuOS01MS40LTM4LjZ6TTY0MCAzMzUuN2MtMy41IDMuMS0yMi43IDExLjYtNDIuNyA1LjMtMTIuMy0zLjktMTkuNS0xNC45LTMxLjYtMjQuMS0xMC03LjYtMjAuOS03LjktMjguMS04LjQuNi0uOC45LTEuMiAxLjItMS40IDE0LjgtOS4yIDMwLjUtMTIuMiA0Ny4zLTYuNSAxMi41IDQuMiAxOS4yIDEzLjUgMzAuNCAyNC4yIDEwLjggMTAuNCAyMSA5LjkgMjMuMSAxMC41LjEtLjEuMiAwIC40LjR6bS0yMTIuNSAxMzdjMi4yIDEuMiAxLjYgMS41IDEuNSAyLTE4LjUtMS40LTMzLjktNy42LTQ2LjgtMjIuMi0yMS44LTI0LjctNDEuNy0yNy45LTQ4LjYtMjkuNy41LS4yLjgtLjQgMS4xLS40IDEzLjEuMSAyNi4xLjcgMzguOSAzLjkgMjUuMyA2LjQgMzUgMjUuNCA0MS42IDM1LjMgMy4yIDQuOCA3LjMgOC4zIDEyLjMgMTEuMXoiLz4KPC9zdmc+" />
-
-
-  <style id="preserved-content-premium-redesign">
-    /* Premium refinement: preserves the original ocean palette and every source value. */
-    :root { --sidebar: 272px; --radius: 22px; --shadow: 0 22px 65px rgba(0,0,0,.30); }
-    html { scroll-padding-top: 34px; }
-    body { background: radial-gradient(ellipse at 78% 8%, color-mix(in srgb,var(--accent-2) 13%,transparent),transparent 31%), radial-gradient(ellipse at 16% 68%,color-mix(in srgb,var(--accent) 8%,transparent),transparent 31%),var(--bg); }
-    .sidebar { padding: 30px 20px 24px; background: color-mix(in srgb,var(--bg) 86%,transparent); border-right-color: color-mix(in srgb,var(--line) 120%,transparent); box-shadow: 16px 0 55px rgba(0,0,0,.12); }
-    .profile { padding: 10px 8px 25px; border-bottom: 1px solid var(--line); }
-    .avatar { width: 112px; height: 132px; border-radius: 26px; border: 1px solid color-mix(in srgb,var(--accent) 75%,transparent); box-shadow: 0 0 0 6px color-mix(in srgb,var(--accent) 7%,transparent),0 18px 44px rgba(0,0,0,.24); transition: transform .35s var(--ease),box-shadow .35s var(--ease); }
-    .avatar:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: 0 0 0 7px color-mix(in srgb,var(--accent) 10%,transparent),0 22px 48px rgba(0,0,0,.3); }
-    .name { font-size: 1.55rem; letter-spacing: -.055em; }
-    .role { font-size: .82rem; line-height: 1.55; }
-    .nav { margin-top: 22px; gap: 5px; }
-    .nav a { padding: 11px 13px; border-radius: 13px; font-size: .88rem; }
-    .nav a:hover,.nav a.active { transform: translateX(3px); background: color-mix(in srgb,var(--surface) 82%,transparent); border-color: color-mix(in srgb,var(--accent-2) 18%,var(--line)); }
-    .socials { margin-top: 22px; gap: 8px; }
-    .socials a { width: 37px; height: 37px; border-radius: 12px; }
-    .main { min-width: 0; }
-    section { min-height: auto; padding: clamp(68px,7vw,94px) clamp(24px,5.5vw,78px); }
-    section .container { max-width: 1080px; }
-    .hero { min-height: min(900px,100svh); padding-top: 90px; padding-bottom: 80px; }
-    .hero .container { width: 100%; }
-    .eyebrow { font-size: .73rem; letter-spacing: .14em; }
-    .hero h1 { max-width: 850px; margin-top: 22px; font-size: clamp(3.2rem,7.1vw,6.5rem); line-height: .99; letter-spacing: -.075em; }
-    .hero h1 span { background: linear-gradient(105deg,var(--accent) 10%,color-mix(in srgb,var(--accent) 55%,var(--accent-2)) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .hero-copy { max-width: 740px; margin-top: 19px; font-size: clamp(.98rem,1.25vw,1.1rem); line-height: 1.85; }
-    .hero-actions { gap: 11px; margin-top: 28px; }
-    .btn { min-height: 46px; padding: 12px 17px; border-radius: 13px; font-size: .85rem; }
-    .btn-primary { box-shadow: 0 8px 26px color-mix(in srgb,var(--accent) 13%,transparent); }
-    .btn-primary:hover { filter: brightness(1.07); box-shadow: 0 14px 35px color-mix(in srgb,var(--accent) 18%,transparent); }
-    .btn-secondary { background: color-mix(in srgb,var(--surface) 64%,transparent); }
-    .hero-meta { gap: 9px; margin-top: 32px; }
-    .pill { padding: 7px 11px; border-radius: 10px; font-size: .75rem; background: color-mix(in srgb,var(--surface) 55%,transparent); }
-    .section-head { margin-bottom: 29px; }
-    .section-head h2 { margin-top: 10px; font-size: clamp(2rem,4vw,3.15rem); letter-spacing: -.06em; line-height: 1.08; }
-    .section-head p { max-width: 700px; margin-top: 11px; font-size: .94rem; line-height: 1.8; }
-    .timeline { gap: 15px; }
-    .experience-card { padding: 23px 24px 23px 56px; border-radius: 19px; background: linear-gradient(135deg,color-mix(in srgb,var(--surface) 96%,transparent),color-mix(in srgb,var(--surface-2) 76%,transparent)); box-shadow: 0 10px 35px rgba(0,0,0,.12); }
-    .experience-card::before { width: 11px; height: 11px; left: 12px; box-shadow: 0 0 0 6px color-mix(in srgb,var(--accent) 10%,transparent),0 0 18px color-mix(in srgb,var(--accent) 24%,transparent); }
-    .experience-card h3 { font-size: 1.15rem; letter-spacing: -.025em; }
-    .company { font-size: .91rem; }
-    .date { margin: 9px 0 10px; font-family: 'DM Mono',ui-monospace,monospace; font-size: .76rem; letter-spacing: .015em; }
-    .experience-card p { font-size: .9rem; line-height: 1.8; }
-    .skills-grid,.services-grid,.projects-grid,.cert-grid { gap: 13px; }
-    .skill-card,.service-card,.project-card,.cert-card,.edu-card,.social-card,.contact-card,.contact-form,.learning-card { border-radius: 19px; border-color: var(--line); box-shadow: 0 10px 32px rgba(0,0,0,.10); backdrop-filter: blur(12px); }
-    .skill-card,.service-card,.project-card,.cert-card,.edu-card,.social-card { background: linear-gradient(145deg,color-mix(in srgb,var(--surface) 86%,transparent),color-mix(in srgb,var(--surface-2) 75%,transparent)); }
-    .skill-card,.service-card,.project-card,.cert-card,.edu-card { padding: 22px; }
-    .skill-card:hover,.service-card:hover,.project-card:hover,.cert-card:hover,.edu-card:hover,.social-card:hover { border-color: color-mix(in srgb,var(--accent-2) 42%,var(--line)); box-shadow: 0 18px 42px rgba(0,0,0,.18); }
-    .skill-top { gap: 12px; font-size: .9rem; }
-    .skill-bar { height: 6px; border-radius: 99px; margin-top: 17px; background: color-mix(in srgb,var(--text) 8%,transparent); }
-    .skill-fill { border-radius: inherit; }
-    .service-icon,.project-icon,.cert-icon,.edu-icon { border: 1px solid color-mix(in srgb,var(--accent) 15%,var(--line)); }
-    .stack-card { min-height: 62px; padding: 13px 15px; border-radius: 14px; background: color-mix(in srgb,var(--surface) 70%,transparent); border-color: var(--line); }
-    .terminal-window { overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: rgba(3,8,16,.84); box-shadow: var(--shadow); }
-    .terminal-output { min-height: 210px; }
-    .network-stage { border-radius: 18px; }
-    .learning-card { padding: 24px; background: linear-gradient(135deg,color-mix(in srgb,var(--accent-2) 7%,var(--surface)),color-mix(in srgb,var(--accent) 5%,var(--surface-2))); }
-    .education-grid,.social-grid { gap: 13px; }
-    .edu-card { padding: 23px; }
-    .social-card { padding: 19px; gap: 13px; }
-    .social-card i { flex: 0 0 45px; width: 45px; height: 45px; border-radius: 13px; font-size: 1.35rem; }
-    .contact-grid { gap: 15px; }
-    .contact-card,.contact-form { padding: 24px; background: color-mix(in srgb,var(--surface) 78%,transparent); }
-    .contact-form { gap: 12px; }
-    .contact-form input,.contact-form textarea { padding: 13px 14px; border-radius: 12px; }
-    .contact-form input:focus,.contact-form textarea:focus { border-color: color-mix(in srgb,var(--accent-2) 72%,transparent); }
-    .contact-item { overflow-wrap: anywhere; line-height: 1.7; }
-    footer { border-top: 1px solid var(--line); background: color-mix(in srgb,var(--bg) 88%,transparent); }
-    .theme-toggle,.recruiter-toggle,.menu-btn { border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.18); backdrop-filter: blur(18px); }
-    .recruiter-toggle { border-radius: 12px; padding: 10px 13px; }
-    .theme-panel { border-color: color-mix(in srgb,var(--accent-2) 18%,var(--line)); }
-    .modal { border-color: color-mix(in srgb,var(--accent-2) 18%,var(--line)); }
-    .resume-option { transition: border-color .2s var(--ease),transform .2s var(--ease); }
-    .resume-option:hover { transform: translateY(-2px); border-color: color-mix(in srgb,var(--accent-2) 45%,var(--line)); }
-    .reveal { transition: opacity .65s var(--ease),transform .65s var(--ease); }
-    @media (min-width: 801px) {
-      .sidebar { overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
-      .main section:not(.hero) .container { position: relative; }
-      .main section:not(.hero) .section-head { padding-bottom: 21px; border-bottom: 1px solid var(--line); }
-    }
-    @media (max-width: 1050px) {
-      :root { --sidebar: 245px; }
-      section { padding-left: 34px; padding-right: 34px; }
-    }
-    @media (max-width: 800px) {
-      .sidebar { padding: 28px 20px 22px; }
-      section { min-height: auto; padding: 76px 22px; }
-      .hero { min-height: 100svh; padding-top: 100px; }
-      .hero h1 { font-size: clamp(3rem,9.2vw,5.3rem); }
-      .recruiter-toggle { right: 74px; top: 18px; }
-      .menu-btn { display: grid; place-items: center; }
-      .section-head { margin-bottom: 25px; }
-    }
-    @media (max-width: 520px) {
-      section { padding: 65px 18px; }
-      .hero { padding-top: 94px; }
-      .hero h1 { font-size: clamp(2.8rem,13vw,4.1rem); }
-      .hero-meta { gap: 7px; }
-      .pill { font-size: .7rem; }
-      .experience-card { padding: 21px 16px 21px 45px; }
-      .timeline::before { left: 13px; }
-      .experience-card::before { left: 7px; }
-      .skill-card,.service-card,.project-card,.cert-card,.edu-card { padding: 19px; }
-      .contact-card,.contact-form { padding: 19px; }
-      .social-card { padding: 15px; }
-      .recruiter-toggle { right: 70px; padding: 9px 10px; font-size: .67rem; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .avatar:hover,.nav a:hover,.btn:hover,.experience-card:hover,.skill-card:hover,.service-card:hover,.project-card:hover,.cert-card:hover,.edu-card:hover,.social-card:hover { transform: none; }
-    }
-  </style>
 
 </head>
 <body data-theme="ocean">
@@ -556,7 +419,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;opa
         <div class="timeline">
           <article class="experience-card reveal"><h3>Technical Associate</h3><div class="company">Up2datez Business Solution Pvt Limited — Kumbakonam</div><span class="date">November 2019 – March 2021</span><p>Annotating images and videos (2D &amp; 3D) for autonomous vehicles.</p></article>
           <article class="experience-card reveal"><h3>Desktop Support Engineer</h3><div class="company">Gateway Technologies Pvt Ltd — Kilpauk, Chennai</div><span class="date">June 2021 – February 2023</span><p>Providing technical support to users, including OS reinstallation, printer installation, Outlook troubleshooting, user account unlocks and ticket resolution.</p></article>
-          <article class="experience-card reveal"><h3>Desktop Support Engineer</h3><div class="company">Cantik Technologies Pvt Limited — Gurugram, Haryana</div><span class="date">February 2023 – Till Now</span><p>Supporting Apollo Tyres Limited, Oragadam with printer installation, asset allocation, Microsoft app troubleshooting (OneDrive, Teams, Office), network-device down-alert monitoring and ticket resolution.</p></article>
+          <article class="experience-card reveal"><h3>Desktop Support Engineer</h3><div class="company">Cantik Technologies Pvt Limited — Gurugram, Haryana</div><span class="date">February 2023 – April 2025</span><p>Supporting Apollo Tyres Limited, Oragadam with printer installation, asset allocation, Microsoft app troubleshooting (OneDrive, Teams, Office), network-device down-alert monitoring and ticket resolution.</p></article>
           <article class="experience-card reveal"><h3>End User Support Engineer</h3><div class="company">Sureworks Infotech Pvt Ltd — Bengaluru, Karnataka</div><span class="date">April 2025 – Till Now</span><p>Supporting Apollo Tyres Limited, Oragadam with end-user technical support, printer installation, asset allocation, Microsoft application troubleshooting, network monitoring and ticket resolution.</p></article>
         </div>
       </div>
@@ -859,11 +722,6 @@ Type "help" to see available commands.</div>
     });
 
     document.getElementById('year').textContent = new Date().getFullYear();
-  
-/* ===== Premium interaction layer =====
-*/
-const premiumMotionOK=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(window.matchMedia('(pointer:fine)').matches&&premiumMotionOK){document.querySelectorAll('.experience-card,.edu-card,.skill-card,.service-card,.stack-card,.learning-card').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) rotateX(${y*-3.5}deg) rotateY(${x*4.5}deg) translateY(-5px)`});card.addEventListener('pointerleave',()=>card.style.transform='')})}
-</script>
+  </script>
 </body>
 </html>
